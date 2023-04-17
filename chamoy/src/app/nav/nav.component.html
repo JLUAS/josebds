@@ -1,0 +1,52 @@
+<header>
+    <div class="min-h-full">
+        <nav class="bg-nav flex flex-col">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div >
+              <img class=" h-20 w-20 mx-auto" src="../assets/img/logoavispa.png" alt="Your Company">
+            </div>
+            <div class="flex h-16 items-center justify-between">
+              <div class="flex items-center">
+                <div class="hidden md:block">
+                  <div class=" flex items-baseline space-x-4">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                    <a [routerLink]="['/index']" class=" hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium text-principal">Inicio</a>
+      
+                    <a [routerLink]="['products']" class=" hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium text-principal">Productos</a>
+      
+                    <a [routerLink]="['distribuidores']" class=" hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium text-principal">Distribuidores</a>
+      
+                    <a [routerLink]="['pedidos']" class=" hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium text-principal">Pedidos</a>
+
+                    <a [routerLink]="['contacto']" class=" hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium text-principal">Contacto</a>
+                  </div>
+                </div>
+              </div>
+              <div class=" flex md:hidden mx-auto">
+                <!-- Mobile menu button -->
+                <button  (click)="toggle()" type="button" class="inline-flex items-center justify-center rounded-md stroke-white p-2 text-white hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" aria-controls="mobile-menu" aria-expanded="false">
+                  <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFECEA" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Mobile menu, show/hide based on menu state. -->
+          <div *ngIf="showDiv==true && isSmallScreen==true" id="mobile-menu" class="grid grid-cols-4 sm:max-w-max flex flex-col block">
+            <div class="space-y-1 px-2 pb-3 pt-2 sm:px-1" >
+              <a [routerLink]="['index']" class="text-principal hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Inicio</a>
+      
+              <a [routerLink]="['products']" class="text-principal hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Productos</a>
+      
+              <a [routerLink]="['distribuidores']" class="text-principal hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Distribuidores</a>
+              
+              <a [routerLink]="['pedidos']" class="text-principal hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Pedidos</a>
+              
+              <a [routerLink]="['contacto']" class="text-principal hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contacto</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+</header>

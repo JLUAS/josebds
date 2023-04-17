@@ -1,0 +1,101 @@
+
+<footer class="bg-nav">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-principal uppercase">Informacion</h2>
+                  <ul class="text-gray-600 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a [routerLink]="['distribuidores']" class="hover:underline">Distribuidores</a>
+                      </li>
+                      <li class="mb-4">
+                          <a [routerLink]="['pedidos']" class="hover:underline">Pedidos</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-principal uppercase">Contactanos</h2>
+                  <ul class="text-gray-600 dark:text-gray-400 font-medium">
+                      <button class="mb-4">
+                          <a href="/#/contacto" class="hover:underline marker snap-y">Envianos un correo</a>
+                      </button>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-principal uppercase">Legal</h2>
+                  <ul class="text-gray-600 dark:text-gray-400 font-medium">
+                    <button data-modal-target="staticModal" data-modal-toggle="staticModal" class="hover:underline mb-4 text-gray-600 dark:text-gray-400 font-medium" type="button">
+     Politica de privacidad
+                    </button>
+                    <div id="staticModal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full">
+      <div class="relative w-full h-full max-w-2xl md:h-auto">
+          <!-- Modal content -->
+          <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+              <!-- Modal header -->
+              <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                  <h3 class="text-xl font-semibold text-secondary">
+                      Politica de privacidad
+                  </h3>
+                  <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-principal rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="staticModal">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
+                  </button>
+              </div>
+              <!-- Modal body -->
+              <div class="p-6 space-y-6 max-w-fit border-2xl">
+                  <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    Esta política de privacidad describe cómo Chamoy la avispa recopila, utiliza y protege la información personal que recopilamos de nuestros usuarios.<br>
+
+                    Información que recopilamos: <br>
+                    
+                    No recopilamos información personal de nuestros usuarios, a menos que nos la proporcione voluntariamente a través del correo electrónico de contacto. En ese caso, solo usaremos la información que nos proporciona para responder a su consulta o solicitud.
+                    <br>
+                    Uso de cookies y tecnologías similares:
+                    <br>
+                    No usamos cookies ni tecnologías similares en nuestro sitio web.
+                    <br>
+                    Uso de la información:
+                    <br>
+                    Solo usamos la información que nos proporciona a través del correo electrónico de contacto para responder a su consulta o solicitud.
+                    <br>
+                    Divulgación de información a terceros:
+                    
+                    No compartimos su información personal con terceros, excepto cuando la ley nos obliga a hacerlo.
+                    <br>
+                    Enlaces a sitios web de terceros:
+                    <br>
+                    Nuestro sitio web puede contener enlaces a sitios web de terceros. No somos responsables de las prácticas de privacidad de estos sitios web y le recomendamos que revise la política de privacidad de cada sitio web que visite.
+                    <br>
+                    Seguridad de la información:
+                    <br>
+                    Tomamos medidas razonables para proteger su información personal contra el acceso no autorizado, la alteración, la divulgación o la destrucción. Sin embargo, ninguna transmisión de datos por Internet o almacenamiento de datos es completamente segura y no podemos garantizar la seguridad absoluta de su información personal.
+                    <br>
+                    Cambios a esta política de privacidad:
+                    <br>
+                    Nos reservamos el derecho de modificar esta política de privacidad en cualquier momento y sin previo aviso. Se recomienda que revise esta política de privacidad regularmente para estar al tanto de cualquier cambio.
+                    <br>
+                    Contáctanos:
+                    <br>          
+                    Si tiene alguna pregunta o inquietud sobre esta política de privacidad, no dude en ponerse en contacto con nosotros a través de nuestro correo electrónico de contacto o mediante el formulario del area de <a href="/#/contacto" class="underline">contacto</a>.
+                    <br>
+                    Última actualización: 05/04/2023
+                  </p>
+              </div>
+              <!-- Modal footer -->
+              <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                  <button data-modal-hide="staticModal" type="button" class="text-white bg-btn focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Continuar</button>
+              </div>
+          </div>
+      </div>
+                    </div>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 Chamoy la avispa. Todos los derechos reservados.
+          </span>
+      </div>
+    </div>
+</footer>

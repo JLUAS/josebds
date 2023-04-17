@@ -1,0 +1,78 @@
+<main>
+    <section class="bg-[#01090b]">
+        <div class="py-5 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-principal ">Realiza tu pedido</h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Gracias por confiar en productos la avispa, te invitamos a rellenar la siguiente informacion para poder realizar tu pedido, para asi poder darte informacion adicional sobre tu pedido.</p>
+            <form action="https://formspree.io/f/mknapnqp" method="POST" class="space-y-8">
+                <div>
+                    <label for="name" class="block mb-2 text-sm font-medium text-principal">Nombre</label>
+                    <input class="shadow-sm bg-gray-50 border border-gray-300 text-principal text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" type="text" id="name" name="name" placeholder="Nombre" required="" />
+                </div>
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-principal">Email</label>
+                    <input type="text" id="name" name="name" required=""  class="shadow-sm bg-gray-50 border border-gray-300 text-principal text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="correo@correo.com" required>
+                </div>
+                    <label for="street-address" class="block mb-2 text-sm font-bold text-xl text-principal ">Informacion de envio</label>
+                    <div>
+                        <label for="street-address" class="block mb-2 text-sm font-medium text-principal">Calle</label>
+                        <input type="text" name="street" id="street-address" placeholder="Calle" class="p-2.5 shadow-sm bg-gray-50 border border-gray-300 text-principal text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="Nombre de la calle" required>
+                    </div>                
+                        <div>
+                            <label for="city" class="block text-sm font-medium text-principal">Ciudad</label>
+                            <input type="text" name="city" placeholder="Ciudad" required=""  class=" shadow-sm bg-gray-50 border border-gray-300 text-nav text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
+                        </div>
+                        <div>
+                            <label for="telephone" class="block mb-2 text-sm font-medium text-principal">Numero de contacto</label>
+                            <input type="text" name="postal-code" placeholder="Codigo postal" required=""  class="shadow-sm bg-gray-50 border border-gray-300 text-principal text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
+                        </div>
+                        <div>
+                            <label for="telephone" class="block mb-2 text-sm font-medium text-principal">Estado</label>
+                            <select name="state" required="" class="shadow-sm bg-gray-50 border border-gray-300 text-prin text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
+                                <option value="no">Seleccione uno...</option>
+                                <option value="Aguascalientes">Aguascalientes</option>
+                                <option value="Baja California">Baja California</option>
+                                <option value="Baja California Sur">Baja California Sur</option>
+                                <option value="Campeche">Campeche</option>
+                                <option value="Chiapas">Chiapas</option>
+                                <option value="Chihuahua">Chihuahua</option>
+                                <option value="CDMX">Ciudad de México</option>
+                                <option value="Coahuila">Coahuila</option>
+                                <option value="Colima">Colima</option>
+                                <option value="Durango">Durango</option>
+                                <option value="Estado de México">Estado de México</option>
+                                <option value="Guanajuato">Guanajuato</option>
+                                <option value="Guerrero">Guerrero</option>
+                                <option value="Hidalgo">Hidalgo</option>
+                                <option value="Jalisco">Jalisco</option>
+                                <option value="Michoacán">Michoacán</option>
+                                <option value="Morelos">Morelos</option>
+                                <option value="Nayarit">Nayarit</option>
+                                <option value="Nuevo León">Nuevo León</option>
+                                <option value="Oaxaca">Oaxaca</option>
+                                <option value="Puebla">Puebla</option>
+                                <option value="Querétaro">Querétaro</option>
+                                <option value="Quintana Roo">Quintana Roo</option>
+                                <option value="San Luis Potosí">San Luis Potosí</option>
+                                <option value="Sinaloa">Sinaloa</option>
+                                <option value="Sonora">Sonora</option>
+                                <option value="Tabasco">Tabasco</option>
+                                <option value="Tamaulipas">Tamaulipas</option>
+                                <option value="Tlaxcala">Tlaxcala</option>
+                                <option value="Veracruz">Veracruz</option>
+                                <option value="Yucatán">Yucatán</option>
+                                <option value="Zacatecas">Zacatecas</option> 
+                              </select>
+                        </div>
+                <div>
+                    <label for="telephone" class="block mb-2 text-sm font-medium text-principal">Numero de contacto</label>
+                    <input type="telephone" id="telephone" name="telephone" required=""  class="shadow-sm bg-gray-50 border border-gray-300 text-principal text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="(111) 212-22-22" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-principal dark:text-gray-400">Infromacion final</label>
+                    <textarea for="message" id="message" name="message" required rows="6" class="block p-2.5 w-full text-sm text-principal bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 " placeholder="Envianos que producto y que cantidad requieres del producto"></textarea>
+                </div>
+                <button type="submit" class="py-3 px-5 text-sm font-medium text-center rounded-lg text-nav  bg-box sm:w-fit opacity-90 hover:opacity-100">Enviar informacion de pedido</button>
+            </form>
+        </div>
+      </section>
+</main>
